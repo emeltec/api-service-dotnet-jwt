@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace WebApplicationAPI.Models
 {
-    public partial class InventarioContext : DbContext
+    public partial class InventoryContext : DbContext
     {
         //public InventarioContext()
         //{
         //}
 
-        public InventarioContext(DbContextOptions<InventarioContext> options)
+        public InventoryContext(DbContextOptions<InventoryContext> options)
             : base(options)
         {
         }

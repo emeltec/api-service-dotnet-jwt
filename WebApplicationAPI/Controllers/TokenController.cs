@@ -19,9 +19,9 @@ namespace WebApplicationAPI.Controllers
     public class TokenController : ControllerBase
     {
         public IConfiguration _configuration;
-        private readonly InventarioContext _context;
+        private readonly InventoryContext _context;
 
-        public TokenController(IConfiguration config, InventarioContext context)
+        public TokenController(IConfiguration config, InventoryContext context)
         {
             _configuration = config;
             _context = context;

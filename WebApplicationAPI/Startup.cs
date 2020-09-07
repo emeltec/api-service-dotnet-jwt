@@ -32,7 +32,7 @@ namespace WebApplicationAPI
         public void ConfigureServices(IServiceCollection services)
         {
             var connection = Configuration.GetConnectionString("InventoryDatabase");
-            services.AddDbContextPool<InventarioContext>(options => options.UseSqlServer(connection));
+            services.AddDbContextPool<InventoryContext>(options => options.UseSqlServer(connection));
             services.AddControllers();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>

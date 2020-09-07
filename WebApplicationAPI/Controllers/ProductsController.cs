@@ -15,9 +15,9 @@ namespace WebApplicationAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly InventarioContext _context;
+        private readonly InventoryContext _context;
 
-        public ProductsController(InventarioContext context)
+        public ProductsController(InventoryContext context)
         {
             _context = context;
         }
